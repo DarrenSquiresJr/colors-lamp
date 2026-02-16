@@ -80,5 +80,4 @@ colors-lamp/
 - Passwords are hashed using MD5 and are not secure for production systems.
 - No advanced security hardening is implemented.
 - The application is intended for educational purposes.
-- The project assumes it is running in a local LAMP environment.
-- Passwords, API keys, and server-specific configuration files should not be committed to the repository.
+- Passwords, API keys, and server-specific configuration files are not committed to the repository.
