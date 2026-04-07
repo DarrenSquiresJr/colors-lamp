@@ -2,9 +2,7 @@ name: Lint HTML CSS JS
 
 on:
   push:
-    branches: ["**"]
   pull_request:
-    branches: ["**"]
 
 jobs:
   lint:
@@ -19,21 +17,16 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install linters
+      - name: Install dependencies
         run: |
-          npm install -g eslint
-          npm install -g stylelint
-          npm install -g stylelint-config-standard
-          npm install -g htmlhint
+          npm init -y
+          npm install eslint@8 stylelint stylelint-config-standard htmlhint --save-dev
 
       - name: Lint JavaScript
-        run: |
-          eslint .
+        run: npx eslint .
 
       - name: Lint CSS
-        run: |
-          stylelint "**/*.css"
+        run: npx stylelint "**/*.css"
 
       - name: Lint HTML
-        run: |
-          htmlhint "**/*.html"
+        run: npx htmlhint "**/*.html"
