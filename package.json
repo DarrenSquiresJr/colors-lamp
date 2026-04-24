@@ -1,0 +1,29 @@
+{
+  "name": "colors-lamp",
+  "version": "1.0.0",
+  "description": "COLORS is a simple LAMP stack web application that allows users to:",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DarrenSquiresJr/colors-lamp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DarrenSquiresJr/colors-lamp/issues"
+  },
+  "homepage": "https://github.com/DarrenSquiresJr/colors-lamp#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}

@@ -123,7 +123,7 @@ function addColor()
 	xhr.setRequestHeader("Content-type", "application/json; charset=UTF-8");
 	try
 	{
-		xhr.onreadystatechange = function() 
+		xhr.onreadystatechange = function()
 		{
 			if (this.readyState == 4 && this.status == 200) 
 			{
@@ -181,5 +181,11 @@ function searchColor()
 	{
 		document.getElementById("colorSearchResult").innerHTML = err.message;
 	}
-	
+	function formatColorName(name) {
+		return name.trim().toLowerCase();
+	}
+
+	if (typeof module !== 'undefined') {
+		module.exports = { formatColorName };
+	}
 }
